@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    status_line = "{} - {}".format(
+    status_line = "{} - {}\n".format(
             socket.gethostname(), time.strftime("%X"))
     return status_line
 

@@ -24,6 +24,6 @@ Vagrant::Config.run do |config|
   # some recipes and/or roles.
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "../timebomb-chef/"
-    chef.add_recipe "timebomb_app"
+    chef.add_recipe "timebomb::timebomb_app"
   end
 end
